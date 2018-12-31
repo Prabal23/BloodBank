@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blood_req_back">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:text="রক্তের গ্রুপসমূহ"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="#e83d3d"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/title"
+        android:id="@+id/l1"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/l11"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:background="@drawable/blood_req_back2"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginTop="0dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/blood" />
+
+            <TextView
+                android:id="@+id/ap"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:ems="10"
+                android:layout_marginLeft="5dp"
+                android:textSize="20dp"
+                android:text="A+"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/l21"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:background="@drawable/blood_req_back2"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginTop="0dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/blood" />
+
+            <TextView
+                android:id="@+id/op"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:ems="10"
+                android:layout_marginLeft="5dp"
+                android:textSize="20dp"
+                android:text="O+"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/l1"
+        android:id="@+id/l2"
+        android:layout_marginTop="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/l12"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:background="@drawable/blood_req_back2"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginTop="0dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/blood" />
+
+            <TextView
+                android:id="@+id/an"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:ems="10"
+                android:layout_marginLeft="5dp"
+                android:textSize="20dp"
+                android:text="A-"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/l22"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:background="@drawable/blood_req_back2"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginTop="0dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/blood" />
+
+            <TextView
+                android:id="@+id/on"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:ems="10"
+                android:layout_marginLeft="5dp"
+                android:textSize="20dp"
+                android:text="O-"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/l2"
+        android:id="@+id/l3"
+        android:layout_marginTop="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/l13"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:background="@drawable/blood_req_back2"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginTop="0dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/blood" />
+
+            <TextView
+                android:id="@+id/bp"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:ems="10"
+                android:layout_marginLeft="5dp"
+                android:textSize="20dp"
+                android:text="B+"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/l23"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:background="@drawable/blood_req_back2"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginTop="0dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/blood" />
+
+            <TextView
+                android:id="@+id/abp"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:ems="10"
+                android:layout_marginLeft="5dp"
+                android:textSize="20dp"
+                android:text="AB+"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginBottom="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/l3"
+        android:id="@+id/l4"
+        android:layout_marginTop="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/l14"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:background="@drawable/blood_req_back2"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginTop="0dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/blood" />
+
+            <TextView
+                android:id="@+id/bn"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:ems="10"
+                android:layout_marginLeft="5dp"
+                android:textSize="20dp"
+                android:text="B-"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/l24"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:background="@drawable/blood_req_back2"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginTop="0dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/blood" />
+
+            <TextView
+                android:id="@+id/abn"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:ems="10"
+                android:layout_marginLeft="5dp"
+                android:textSize="20dp"
+                android:text="AB-"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

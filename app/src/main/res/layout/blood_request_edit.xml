@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backup"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".BloodRequestEdit">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f2ffffff" />
+
+    <ImageView
+        android:id="@+id/backing"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/backing" />
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="#00000000"
+        android:gravity="center"
+        android:text="রক্তদানের অনুরোধ"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:typeface="serif" />
+
+    <ImageView
+        android:id="@+id/menu"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ham" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/toolbar_title"
+        android:layout_marginTop="15dp"
+        android:background="#9e9b9b" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/profile"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/blood_profile" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/t2"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:textColorHint="#6b6868">
+
+                <EditText
+                    android:id="@+id/sign_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:hint="আপনার নাম *"
+                    android:textColor="#464545" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/address"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@+id/input_name"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/blood_location" />
+
+            <TextView
+                android:id="@+id/sign_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_name"
+                android:layout_marginLeft="55dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="25dp"
+                android:text="জেলা *"
+                android:textColor="#464545"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:id="@+id/grp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@+id/sign_add"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/blood_drop" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_grp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sign_add"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:textColorHint="#6b6868">
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:hint="কাঙ্খিত রক্তের গ্রুপ *"
+                    android:textColor="#464545"></AutoCompleteTextView>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/b_amount"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@+id/input_grp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/blood_bag" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_grp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:textColorHint="#6b6868">
+
+                <EditText
+                    android:id="@+id/sign_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:hint="রক্তের পরিমাণ *"
+                    android:textColor="#464545" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/place"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@+id/input_amount"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/placeholder" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_amount"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:textColorHint="#6b6868">
+
+                <EditText
+                    android:id="@+id/sign_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:hint="রোগীর অবস্থান *"
+                    android:textColor="#464545" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/date"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@+id/input_place"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/calendar" />
+
+            <TextView
+                android:id="@+id/sign_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_place"
+                android:layout_marginLeft="55dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="25dp"
+                android:text="রক্তদানের তারিখ *"
+                android:textColor="#464545"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:id="@+id/mail"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@+id/sign_date"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/blood_mail" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sign_date"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:textColorHint="#6b6868">
+
+                <EditText
+                    android:id="@+id/sign_mail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:hint="প্রয়োজনীয় বার্তা *"
+                    android:textColor="#464545" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/phn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@+id/input_mail"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/blood_call" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_phn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_mail"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:textColorHint="#6b6868">
+
+                <EditText
+                    android:id="@+id/sign_phn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:hint="ফোন নাম্বার *"
+                    android:inputType="number"
+                    android:textColor="#464545" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/counting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/input_mail"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="35dp"
+                android:inputType="textNoSuggestions|textVisiblePassword"
+                android:maxLength="11"
+                android:text="11/11"
+                android:textColor="#e83d3d" />
+
+            <ImageView
+                android:id="@+id/pass"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@+id/input_phn"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/lock" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_phn"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:textColorHint="#6b6868">
+
+                <EditText
+                    android:id="@+id/sign_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:hint="পাসওয়ার্ড *"
+                    android:textColor="#464545" />
+            </android.support.design.widget.TextInputLayout>
+
+            <CheckBox
+                android:id="@+id/check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_pass"
+                android:layout_centerHorizontal="true"
+                android:text="জরুরিভিত্তিতে প্রয়োজন?" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/check"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/member"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#e83d3d"
+                    android:text="সম্পাদন করুন"
+                    android:textColor="#ffffff"
+                    android:layout_weight="1"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/del"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#e83d3d"
+                    android:text="মুছে ফেলুন"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

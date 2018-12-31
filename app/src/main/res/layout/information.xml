@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".InformationPage">
+
+    <ImageView
+        android:id="@+id/backing"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/backing" />
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="#00000000"
+        android:gravity="center"
+        android:text="রক্তদাতার তথ্য"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:typeface="serif" />
+
+    <ImageView
+        android:id="@+id/menu"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ham" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/toolbar_title"
+        android:layout_marginTop="15dp"
+        android:background="#9e9b9b" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_title"
+        android:layout_marginTop="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/backs"
+                style="@style/Text"
+                android:layout_width="match_parent"
+                android:layout_height="103dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/name_back" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/det_back"
+                android:src="@drawable/man_user1" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="37dp"
+                android:background="#00000000"
+                android:text="নাম"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="normal"
+                android:typeface="serif" />
+
+            <LinearLayout
+                android:id="@+id/l1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/backs"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/name_back"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/degree_title"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#00000000"
+                    android:text="ঠিকানা"
+                    android:textColor="#000000"
+                    android:textSize="14dp"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#00000000"
+                    android:text=":"
+                    android:textColor="#000000"
+                    android:textSize="14dp"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/chamber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/all_det"
+                    android:text="স্থান"
+                    android:textColor="#5b5b5b"
+                    android:textSize="14dp"
+                    android:textStyle="normal"
+                    android:typeface="serif" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/l1"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/name_back"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/chamber_title"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="#00000000"
+                    android:text="ই-মেইল"
+                    android:textColor="#000000"
+                    android:textSize="14dp"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#00000000"
+                    android:text=":"
+                    android:textColor="#000000"
+                    android:textSize="14dp"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/degree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/all_det"
+                    android:text="prabalbhatt2@gmail.com"
+                    android:textColor="#5b5b5b"
+                    android:textSize="14dp"
+                    android:textStyle="normal"
+                    android:typeface="serif" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_marginLeft="110dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="0dp"
+                android:background="#00000000"
+                android:text="রক্তের গ্রুপ"
+                android:textColor="#e83d3d"
+                android:textSize="13dp"
+                android:textStyle="normal"
+                android:typeface="serif" />
+
+            <LinearLayout
+                android:id="@+id/l3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/l2"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/name_back"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/consult_title"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#00000000"
+                    android:text="ফোন নং"
+                    android:textColor="#000000"
+                    android:textSize="14dp"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#00000000"
+                    android:text=":"
+                    android:textColor="#000000"
+                    android:textSize="14dp"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/consult"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/all_det"
+                    android:text="01720848705"
+                    android:textColor="#5b5b5b"
+                    android:textSize="14dp"
+                    android:textStyle="normal"
+                    android:typeface="serif" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_below="@+id/l3"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="#5b5b5b" />
+
+            <TextView
+                android:id="@+id/fees_title"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_below="@+id/l3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:background="#000000"
+                android:text="Consultation Fees"
+                android:textColor="#000000"
+                android:textSize="12dp"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/fees"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_below="@+id/fees_title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="0dp"
+                android:background="#000000"
+                android:text="600 BDT"
+                android:textColor="#5b5b5b"
+                android:textSize="14dp"
+                android:textStyle="normal"
+                android:typeface="serif" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_below="@+id/fees"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="#5b5b5b" />
+
+            <TextView
+                android:id="@+id/con_title"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_below="@+id/fees"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:background="#000000"
+                android:text="Get Appointment/Ticket"
+                android:textColor="#000000"
+                android:textSize="12dp"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/con"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_below="@+id/con_title"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="0dp"
+                android:background="#000000"
+                android:text="123456"
+                android:textColor="#5b5b5b"
+                android:textSize="14dp"
+                android:textStyle="normal"
+                android:typeface="serif" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="22dp"
+        android:background="#e83d3d"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/phone"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/blood_back_white"
+            android:src="@drawable/phone_call"
+            android:text="Get Ticket"
+            android:textColor="#ffffff"
+            android:typeface="serif" />
+
+        <ImageView
+            android:id="@+id/sms"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/blood_back_white"
+            android:src="@drawable/sms"
+            android:text="Get Ticket"
+            android:textColor="#ffffff"
+            android:typeface="serif" />
+
+        <ImageView
+            android:id="@+id/mail"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/blood_back_white"
+            android:src="@drawable/mail"
+            android:text="Get Ticket"
+            android:textColor="#ffffff"
+            android:typeface="serif" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#e83d3d"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:text="ফোন"
+            android:textSize="10dp"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:typeface="serif" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:text="বার্তা"
+            android:textSize="10dp"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:typeface="serif" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="5dp"
+            android:text="ইমেইল"
+            android:textSize="10dp"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:typeface="serif" />
+
+    </LinearLayout>
+
+</RelativeLayout>

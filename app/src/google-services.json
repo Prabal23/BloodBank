@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "865409422389",
+    "firebase_url": "https://notification-893c9.firebaseio.com",
+    "project_id": "notification-893c9",
+    "storage_bucket": "notification-893c9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:865409422389:android:c170da5180f6d23c",
+        "android_client_info": {
+          "package_name": "com.example.itlab.pushnotification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "865409422389-7agtv9g51mcv3pjl75rirad4mdspc7pl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvf5BVPiSHEGfzOpo52i76tmClfCa8SZI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:865409422389:android:7c1e1d191a4d0516",
+        "android_client_info": {
+          "package_name": "com.itlab.task.itlabhub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "865409422389-7agtv9g51mcv3pjl75rirad4mdspc7pl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvf5BVPiSHEGfzOpo52i76tmClfCa8SZI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="#ffffff"
+    android:padding="5dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/logo"
+        android:src="@drawable/logo101"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:text="নিশ্চিতভাবে মূলদাতার তালিকায় যুক্ত করতে চান?"
+        android:layout_centerHorizontal="true"
+        android:textColor="#5c5b5b"
+        android:textSize="14dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/logo"/>
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/title"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/no"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="45dp"
+            android:background="#e83d3d"
+            android:gravity="center"
+            android:text="না"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/yes"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dp"
+            android:background="#e83d3d"
+            android:gravity="center"
+            android:text="হ্যাঁ"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

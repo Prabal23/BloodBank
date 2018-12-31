@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.blood.band.bloodband">
+
+    <supports-screens
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        android:smallScreens="true"
+        android:anyDensity="true"
+        android:resizeable="true"/>
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Splash"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_home"/>
+
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"/>
+
+        <activity android:name=".BloodSearch"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".BloodResult"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".InformationPage"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".BloodLocation"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".BeMember"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".MyDonor"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".AddMyDonor"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".MyProfile"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".MyDonorEdit"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".BloodRequest"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".InformationPageUser"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".LoginProfile"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".LogReport"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".LogEntry"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".LogEdit"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".LoginSearchLocation"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ProfileEdit"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".BloodRequestReport"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".BloodRequestDetails"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".BloodRequestEdit"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".RateDonor"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".LoginRating"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".RatingbyMe"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".HealthInfo"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".PicChange"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".LoginRequest"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".RequestbyMe"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".Developer_Website"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".Facebook_page"
+            android:screenOrientation="portrait"/>
+
+    </application>
+
+</manifest>

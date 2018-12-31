@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textColor="@color/abc_primary_text_disable_only_material_dark" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageViewProduct"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/det_back1"
+        android:src="@drawable/member_icon" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="13dp"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/circular_progress_bar" />
+
+    <TextView
+        android:id="@+id/gp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/circular_shape"
+        android:gravity="center"
+        android:text="AB+"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="9dp" />
+
+    <LinearLayout
+        android:id="@+id/names"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Name"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/badge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="@string/medal1"
+            android:textAlignment="center"
+            android:textColor="#696868"
+            android:textSize="15dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/medals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:gravity="center"
+            android:text="মেডেল"
+            android:textColor="#8b8a8a"
+            android:textSize="12dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/names"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Email"
+        android:textColor="#000000"
+        android:textSize="13dp"
+        android:textStyle="normal"
+        android:typeface="serif" />
+
+    <LinearLayout
+        android:id="@+id/lastdon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPrice"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="7dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txtAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Last Donation"
+            android:textColor="#404040"
+            android:textSize="11dp"
+            android:textStyle="normal"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/ok_notok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:text="@string/wrong"
+            android:textAlignment="center"
+            android:textColor="#e83d3d"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RatingBar
+            android:id="@+id/ratingBarSmall"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:progressTint="@color/colorPrimary"
+            android:rating="5"
+            android:scaleX=".75"
+            android:scaleY=".75"
+            android:stepSize="0.25"
+            android:theme="@style/RatingBar"
+            android:transformPivotX="40dp"
+            android:transformPivotY="0dp" />
+
+        <TextView
+            android:id="@+id/txtrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="4.75"
+            android:textColor="#e83d3d"
+            android:textSize="9dp"
+            android:textStyle="normal"
+            android:typeface="serif" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtphn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtPrice"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="0dp"
+        android:text="phn"
+        android:textColor="#ffffff"
+        android:textSize="13.5dp"
+        android:textStyle="normal"
+        android:typeface="serif" />
+
+</RelativeLayout>
