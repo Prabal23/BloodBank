@@ -7,8 +7,8 @@ android {
         applicationId "com.blood.band.bloodband"
         minSdkVersion 14
         targetSdkVersion 26
-        versionCode 8
-        versionName "1.5.21.1"
+        versionCode 9
+        versionName "2.1.5"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
